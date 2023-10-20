@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Исключенные люди с возрастом 30:</h1>
+    <ul>
+        {% for person in excluded_people %}
+            <li>Имя: {{ person.name }}, Возраст: {{ person.age }}</li>
+        {% endfor %}
+</ul>
+{% endblock %}

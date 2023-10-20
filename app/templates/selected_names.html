@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Выбранные имена:</h1>
+    <ul>
+        {% for person in selected_names %}
+            <li>{{ person.name }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
